@@ -20,3 +20,6 @@ spring:
     username: zlvzzsksvezhjd
     password: 0e17144dda39a1b63619654bbbae19f78fb2a2ef86d6148b0c04d02e351a9596
     driverClassName: org.postgresql.Driver
+
+environments:
+  enableCors: http://localhost:300

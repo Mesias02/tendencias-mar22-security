@@ -3,7 +3,7 @@ package com.empresa.security.model
 import javax.persistence.*
 
 @Entity
-@Table(name = "users    ")
+@Table(name = "users")
 class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
