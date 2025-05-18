@@ -1,6 +1,12 @@
 package com.empresa.security.model
 
-import javax.persistence.*
+import jakarta.persistence.Column
+import jakarta.persistence.Entity
+import jakarta.persistence.GeneratedValue
+import jakarta.persistence.GenerationType
+import jakarta.persistence.Id
+import jakarta.persistence.Table
+
 
 @Entity
 @Table(name = "users")
@@ -10,7 +16,11 @@ class User {
     @Column(updatable = false)
     var id: Long? = null
     var username: String? = null
-    var password: String? = null
-    var firstname: String? = null
-    var lastname: String? = null
+    var email: String? = null
+    @Column(name = "password_hash")
+    var passwordHash: String? = null
+    @Column(name = "is_active")
+    var isActive: String? = null
+    @Column(name = "created_at")
+    var createdAt: String? = null
 }
